@@ -10,6 +10,7 @@ import {
 } from "fastify-type-provider-zod";
 import { createLinkRoute } from "./routes/create-link";
 import { deleteLinkRoute } from "./routes/delete-link";
+import { exportLinksRoute } from "./routes/export-links";
 import { getLinkByShortUrlRoute } from "./routes/get-link";
 import { incrementLinkAccessRoute } from "./routes/increment-link-access";
 import { listLinksRoute } from "./routes/list-links";
@@ -57,6 +58,7 @@ server.register(createLinkRoute)
 server.register(deleteLinkRoute)
 server.register(listLinksRoute)
 server.register(incrementLinkAccessRoute)
+server.register(exportLinksRoute)
 
 server.listen({ port: 3333, host: "0.0.0.0" }).then(() => {
   console.log("HTTP server running on http://localhost:3333");
