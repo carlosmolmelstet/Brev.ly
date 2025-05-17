@@ -36,7 +36,7 @@ export const getLinkByShortUrlRoute: FastifyPluginAsyncZod = async server => {
       const result = await getLinkByShortUrl(shortUrl)
 
       if (isLeft(result)) {
-        return reply.status(400).send({ message: result.left })
+        return reply.status(400).send({ message: result.left.message })
       }
 
       return reply.status(200).send(result.right)
