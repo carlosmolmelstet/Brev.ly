@@ -9,6 +9,7 @@ import {
   validatorCompiler,
 } from "fastify-type-provider-zod";
 import { createLinkRoute } from "./routes/create-link";
+import { deleteLinkRoute } from "./routes/delete-link";
 import { getLinkByShortUrlRoute } from "./routes/get-link";
 
 const server = fastify();
@@ -51,6 +52,7 @@ server.register(fastifySwaggerUi, {
 
 server.register(getLinkByShortUrlRoute);
 server.register(createLinkRoute)
+server.register(deleteLinkRoute)
 
 server.listen({ port: 3333, host: "0.0.0.0" }).then(() => {
   console.log("HTTP server running on http://localhost:3333");
