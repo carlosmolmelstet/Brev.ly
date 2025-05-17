@@ -10,23 +10,23 @@ Este projeto é dividido em duas partes: **Web (Frontend)** e **Server (Backend)
 🎨 Foco total na responsividade e experiência do usuário
 
 ### ✅ Funcionalidades
-- [ ] Criar um novo link encurtado
-  - [ ] Validação de formato do encurtamento
-  - [ ] Verificação de encurtamento já existente
-- [ ] Deletar um link
-- [ ] Obter a URL original a partir do encurtamento
-- [ ] Listar todas as URLs cadastradas
-- [ ] Incrementar a quantidade de acessos de um link
-- [ ] Baixar um relatório em formato CSV com os links criados
+- [x] Criar um novo link encurtado
+  - [x] Validação de formato do encurtamento
+  - [x] Verificação de encurtamento já existente
+- [x] Deletar um link
+- [x] Obter a URL original a partir do encurtamento
+- [x] Listar todas as URLs cadastradas
+- [x] Incrementar a quantidade de acessos de um link
+- [x] Baixar um relatório em formato CSV com os links criados
 
 ### 💡 Requisitos de Interface
-- [ ] Aplicação construída com **React SPA + Vite**
-- [ ] Layout fiel ao Figma
-- [ ] Boa experiência de usuário:
+- [x] Aplicação construída com **React SPA + Vite**
+- [x] Layout fiel ao Figma
+- [x] Boa experiência de usuário:
   - `Empty States`
   - Ícones de carregamento
   - Bloqueio de ações conforme estado
-- [ ] Responsividade completa (Desktop e Mobile)
+- [x] Responsividade completa (Desktop e Mobile)
 
 ---
 
